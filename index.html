@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+    <meta charset="utf-8">
+	<style type="text/css">
+		body{
+			font-family: monospace;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<label for="amount">Amount</label><br>
+		<input type="number" name="amount" id="amount" value='1'>
+	</div>
+	<div>
+		<label for="from">From</label><br>
+	    <select name="from" id='from'>
+    		<option value='USD'>USD</option>
+    	</select>
+    </div>
+    <div>
+		<label for="to">To</label><br>
+	    <select id='to' name="to">
+	    	<option selected disabled>Select currency</option>
+	    </select>
+	</div>
+    <button onclick="convert()">Convert</button>
+    <div id='result'></div>
+    <div id='countries'></div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
